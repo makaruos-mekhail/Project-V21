@@ -1,0 +1,18 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <div >
+    <div>
+      <input type="email" id="floatingemail" formControlName="email" placeholder="Email" />
+      <label for="floatingemail">Username</label>
+    </div>
+    <div class="form-floating w-100">
+      <input type="password" id="floatingPassword" formControlName="password" placeholder="Password" />
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div>
+      <!-- <p>
+        Forgot Password
+      </p> -->
+      <button type="submit">Login</button>
+    </div>
+  </div>
+</form>
